@@ -28,7 +28,7 @@ body{
 }
 
 .logo img{
-    width: 50%;
+    width: 48%;
 }
 
 a{
@@ -63,7 +63,12 @@ a{
 }
 
 main{
-    background-image: url(../imagenes/main.jpg);    
+    width: 100%;
+    background-image: url(../imagenes/main.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 section{
@@ -72,58 +77,44 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2vh;
+    color: #dfd394;
+    background-image: url(../imagenes/fondopizzarron.jpg);
+    background-size: cover;
     margin: 3vh;
-    
+    padding: 2vh;  
 }
 
-section picture img{
-    width: 50%;
+section img{
+    width: 60%;
+}
+
+picture{
     text-align: center;
 }
 
 .secpizzas{
-    background-image: url(../imagenes/fondopizzarron.jpg);
-    background-size: cover;
-    background-position: center;
     border-radius: 30px 0px;
-    
-
 }
 
 .seclomitos{
-    background-image: url(../imagenes/fondopizzarron.jpg);
-    background-size: cover;
-    background-position: center;
     border-radius: 0px 30px;
 }
 
 .secempanadas{
-    background-image: url(../imagenes/fondopizzarron.jpg);
-    background-size: cover;
-    background-position: center;
     border-radius: 30px 0px;
 }
 
 .secpapasfritas{
-    background-image: url(../imagenes/fondopizzarron.jpg);
-    background-size: cover;
-    background-position: center;
     border-radius: 0px 30px;
 }
 
 .secsandwichs{
-    background-image: url(../imagenes/fondopizzarron.jpg);
-    background-size: cover;
-    background-position: center;
     border-radius: 30px 0px;
 }
 
-
-
-main img{
-
-
+p{
+    font-size: 0.8em;
+    line-height: 1.5em;
 }
 
 footer{
@@ -144,9 +135,85 @@ footer{
     line-height: 2;
 }
 
+h4{
+    margin-bottom: 10px;
+}
+
 .copy{
     font-size: 1.5vh;
     text-align: center;
     color: #fff;
     background-image: url(../imagenes/fondopizzarron.jpg);
+}
+
+@media screen and (min-width: 425px) {
+    .parteheader{
+        height: 450px;
+    }
+    .logo img{
+        width: 60%;
+    }
+    section{
+        width: 90%;
+    }
+    .direcciones p{
+        font-size: 0.6em;
+    }
+    .copy{
+        font-size: 1.8vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sucursales a{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    .logo img{
+        margin-top: 50px;
+        width: 45%;
+    }
+    .parteheader{
+        height: 700px;
+    }
+    .lista{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 3vh;
+    }
+    .direcciones p{
+        font-size: 0.8em;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+    section img{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+    
+    }
 }
