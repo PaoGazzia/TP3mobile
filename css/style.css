@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 320px){
+    
 body{
     font-family: 'Roboto Mono', monospace;
 }
@@ -16,7 +18,7 @@ body{
     background-size: cover;
     background-position: center; 
     padding: 2vh;
-    height: 300px;
+    height: 50vh;
     position: relative;
 }
 
@@ -28,7 +30,7 @@ body{
 }
 
 .logo img{
-    width: 48%;
+    width: 45%;
 }
 
 a{
@@ -37,11 +39,15 @@ a{
 }
 
 .sucursales a{
+    margin: 0.8vh;
+    border-radius: 15px 15px 15px 0;
+    background-color: #d63030;
     color: #fff;
     position: absolute;
     padding: 1vh;
     top: 0;
     right: 0;
+    font-size: 0.8em;
 }
 
 .lista{
@@ -60,6 +66,7 @@ a{
 .lista li{
     list-style: none;
     font-size: 1.2em;
+    padding: 0.5vh;
 }
 
 main{
@@ -92,6 +99,10 @@ picture{
     text-align: center;
 }
 
+h2{
+    padding: 1vh;
+}
+
 .secpizzas{
     border-radius: 30px 0px;
 }
@@ -112,14 +123,17 @@ picture{
     border-radius: 30px 0px;
 }
 
+.secbebidas{
+    border-radius: 0px 30px;
+}
+
 p{
     font-size: 0.8em;
-    line-height: 1.5em;
+    line-height: 1.7em;
 }
 
 footer{
     background-image: url(../imagenes/fondofooter2.jpg);
-
     background-size: cover;
     background-position: center; 
     color: #fff;
@@ -130,9 +144,9 @@ footer{
 }
 .direcciones p{
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 0.6em;
     text-align: center;
-    line-height: 2;
+    padding: 0.5vh;
 }
 
 h4{
@@ -140,80 +154,199 @@ h4{
 }
 
 .copy{
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     text-align: center;
     color: #fff;
     background-image: url(../imagenes/fondopizzarron.jpg);
+    background-size: cover;
+}
 }
 
 @media screen and (min-width: 425px) {
-    .parteheader{
-        height: 450px;
-    }
-    .logo img{
-        width: 60%;
-    }
-    section{
-        width: 90%;
-    }
-    .direcciones p{
-        font-size: 0.6em;
-    }
-    .copy{
-        font-size: 1.8vh;
-    }
+.parteheader{
+    height: 70vh;
+}
+
+.logo img{
+    width: 50%;
+}
+
+section{
+    width: 90%;
+    letter-spacing: 2px
+}
+
+.imgsandwich{
+    width: 65%;
+}
+
+.direcciones p{
+    font-size: 0.6em;
+}
+
+.copy{
+    font-size: 0.8em;
+}
+
+.sucursales a{
+    margin: 1.5vh;
+    font-size: 1em;
+}
+
 }
 
 @media screen and (min-width: 768px) {
-    .sucursales a{
-        font-size: 1.5em;
-        padding: 20px;
-    }
-    .logo img{
-        margin-top: 50px;
-        width: 45%;
-    }
-    .parteheader{
-        height: 700px;
-    }
-    .lista{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center; 
-        padding: 3vh;
-    }
-    .direcciones p{
-        font-size: 0.8em;
-    }
-    main{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    
-    }
-    section{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 40%;
-    }
-    section img{
-        width: 40%;
-    }
+.sucursales a{
+    font-size: 1.4em;
+    padding: 2vh;
+}
+
+.logo img{    
+    width: 35%;
+}
+
+.parteheader{
+    background-image: url(../imagenes/fondoheader33.jpg);
+    background-size: cover;
+    background-position: center; 
+    padding: 2vh;
+    height: 500px;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 3vh;
+}
+
+.lista li{
+    font-weight: 400;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    padding: 2vh;
+}
+
+.direcciones p{
+    font-size: 1em;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+}
+
+section img{
+    width: 40%;
+}
+
+.copy{
+    font-size: 1em;
+}
+
+.imagen1{
+    width: 50%;
+}
+
 }
 
 @media screen and (min-width: 1024px) {
-    body {
 
-    }
+.sucursales a{
+    font-size: 1.8em;
+}
+
+.logo img{    
+    width: 36%;
+}
+
+.parteheader{
+    height: 700px;
+}
+ 
+.lista li{
+    letter-spacing: 2px;
+    font-size: 2em;
+    padding: 3vh;
+}
+
+h2{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1em;
+}
+
+h4{
+    font-size: 1.8em;
+    letter-spacing: 1.5px;
+}
+
+.direcciones p{
+    font-size: 1.2em;
+    font-weight: normal;
+}
 }
 
 @media screen and (min-width: 1440px) {
-    body {
+.sucursales a{
+    font-size: 2.2em;
+    padding: 2.5vh;
+    margin: 4vh;
+}
     
-    }
+.logo img{    
+     width: 35%;
+}
+    
+.parteheader{   
+    height: 1000px;
+}
+    
+.lista{
+    padding: 5vh;
+}
+    
+.lista li{
+    font-weight: 400;
+    font-size: 2.2em;
+    padding: 2vh;
+}
+    
+.direcciones p{
+    font-size: 1.4em;
+}
+
+section{
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    width: 42%;
+}
+
+.imgsandwich{
+    width: 50%;
+}
+
+.imagen1{
+    width: 60%;
+}
+    
+.copy{
+    font-size: 1.2em;
+}    
 }
